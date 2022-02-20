@@ -1,0 +1,66 @@
+{
+  "name": "האפליקציה שלי",
+  "buttons": {
+    "login": "התחברות",
+    "registration": "הַרשָׁמָה",
+    "goToReg": "צור חשבון",
+    "goToLogin": "כבר יש לך חשבון?"
+  },
+  "links": {
+    "home": "בית",
+    "login": "התחברות",
+    "registration": "הַרשָׁמָה"
+  },
+  "home": {
+    "title": "בית",
+    "description": "זוהי אפליקציית הדגמה עם כניסה ורישום"
+  },
+  "login": {
+    "title": "התחברות",
+    "fields": {
+      "email": {
+        "name": "אימייל",
+        "placeholder": "הזן דואר אלקטרוני",
+        "errorRequired": "יש צורך באימייל",
+        "errorEmail": "מייל שגוי"
+      },
+      "password": {
+        "name": "סיסמה",
+        "placeholder": "הזן את הסיסמה",
+        "errorRequired": "דרושה סיסמא"
+      }
+    }
+  },
+
+  "registration": {
+    "title": "הַרשָׁמָה",
+    "fields": {
+      "username": {
+        "name": "שם משתמש",
+        "placeholder": "הכנס שם משתמש",
+        "errorRequired": "נדרש שם משתמש",
+        "errorMin": "שם המשתמש חייב להיות ארוך מ-3",
+        "errorMax": "שם המשתמש חייב להיות קצר מ-12"
+      },
+      "email": {
+        "name": "אימייל",
+        "placeholder": "הזן דואר אלקטרוני",
+        "errorRequired": "יש צורך באימייל",
+        "errorEmail": "מייל שגוי"
+      },
+      "password": {
+        "name": "סיסמה",
+        "placeholder": "הזן את הסיסמה",
+        "errorRequired": "דרושה סיסמא",
+        "errorMin": "הסיסמה חייבת להיות ארוכה מ-6",
+        "errorMax": "הסיסמה חייבת להיות קצרה מ-10"
+      },
+      "password2": {
+        "name": "אשר סיסמה",
+        "placeholder": "אשר סיסמה",
+        "errorRequired": "נדרשת סיסמה 2",
+        "errorMatch": "הסיסמאות צריכות להיות זהות"
+      }
+    }
+  }
+}

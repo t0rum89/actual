@@ -1,0 +1,66 @@
+{
+  "name": "Mon App",
+  "buttons": {
+    "login": "Connexion",
+    "registration": "Inscription",
+    "goToReg": "Créer un compte",
+    "goToLogin": "Vous avez déjà un compte?"
+  },
+  "links": {
+    "home": "Maison",
+    "login": "Connexion",
+    "registration": "Inscription"
+  },
+  "home": {
+    "title": "Maison",
+    "description": "Ceci est une application de démonstration avec connexion et inscription"
+  },
+  "login": {
+    "title": "Connexion",
+    "fields": {
+      "email": {
+        "name": "Adresse e-mail",
+        "placeholder": "Entrez l'e-mail",
+        "errorRequired": "L'e-mail est requis",
+        "errorEmail": "Mauvaise adresse mail"
+      },
+      "password": {
+        "name": "Mot de passe",
+        "placeholder": "Entrer le mot de passe",
+        "errorRequired": "Mot de passe requis"
+      }
+    }
+  },
+
+  "registration": {
+    "title": "Inscription",
+    "fields": {
+      "username": {
+        "name": "Nom d'utilisateur",
+        "placeholder": "Saisissez votre nom d'utilisateur",
+        "errorRequired": "Nom d'utilisateur est nécessaire",
+        "errorMin": "Le nom d'utilisateur doit être plus long que 3",
+        "errorMax": "Le nom d'utilisateur doit être inférieur à 12"
+      },
+      "email": {
+        "name": "Adresse e-mail",
+        "placeholder": "Entrez l'e-mail",
+        "errorRequired": "L'e-mail est requis",
+        "errorEmail": "Mauvaise adresse mail"
+      },
+      "password": {
+        "name": "Mot de passe",
+        "placeholder": "Entrer le mot de passe",
+        "errorRequired": "Mot de passe requis",
+        "errorMin": "Le mot de passe doit être plus long que 6",
+        "errorMax": "Le mot de passe doit être inférieur à 10"
+      },
+      "password2": {
+        "name": "Confirmez le mot de passe",
+        "placeholder": "Confirmez le mot de passe",
+        "errorRequired": "Le mot de passe 2 est requis",
+        "errorMatch": "Les mots de passe doivent être les mêmes"
+      }
+    }
+  }
+}

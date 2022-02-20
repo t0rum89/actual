@@ -1,0 +1,70 @@
+{
+  "name": "My App",
+
+  "buttons": {
+    "login": "Login",
+    "registration": "Registration",
+    "goToReg": "Create an account",
+    "goToLogin": "Already have an account?"
+  },
+
+  "links": {
+    "home": "Home",
+    "login": "Login",
+    "registration": "Registration"
+  },
+
+  "home": {
+    "title": "Home",
+    "description": "This is demo app with login and registration"
+  },
+
+  "login": {
+    "title": "Login",
+    "fields": {
+      "email": {
+        "name": "Email adress",
+        "placeholder": "Enter e-mail",
+        "errorRequired": "Email is required",
+        "errorEmail": "Wrong email"
+      },
+      "password": {
+        "name": "Password",
+        "placeholder": "Enter password",
+        "errorRequired": "Password is required"
+      }
+    }
+  },
+
+  "registration": {
+    "title": "Registration",
+    "fields": {
+      "username": {
+        "name": "Username",
+        "placeholder": "Enter username",
+        "errorRequired": "Username is required",
+        "errorMin": "The username must be longer than 3",
+        "errorMax": "The username must be shorter than 12"
+      },
+      "email": {
+        "name": "Email adress",
+        "placeholder": "Enter e-mail",
+        "errorRequired": "Email is required",
+        "errorEmail": "Wrong email"
+      },
+      "password": {
+        "name": "Password",
+        "placeholder": "Enter password",
+        "errorRequired": "Password is required",
+        "errorMin": "Password must be longer than 6",
+        "errorMax": "Password must be shorter than 10"
+      },
+      "password2": {
+        "name": "Confirm password",
+        "placeholder": "Confirm password",
+        "errorRequired": "Password 2 is required",
+        "errorMatch": "Passwords should be the same"
+      }
+    }
+  }
+}
