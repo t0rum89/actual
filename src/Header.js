@@ -43,6 +43,14 @@ const lngs = {
 const Header = () => {
   const { t, i18n } = useTranslation("common");
 
+  // const changeToLTR = () => {
+  //   ("html").removeClass("direction-rtl").addClass("direction-ltr");
+  // };
+
+  // const changeToRTL = () => {
+  //   ("html").removeClass("direction-ltr").addClass("direction-rtl");
+  // };
+
   return (
     <>
       <HeaderWrapper>
@@ -53,11 +61,10 @@ const Header = () => {
           {Object.keys(lngs).map((lng) => (
             <Button
               key={lng}
-              // style={{
-              //   background: "transparent",
-              //   boxShadow: "unset",
-              //   marginBottom: "10px",
-              // }}
+              style={{
+                background: "transparent",
+                boxShadow: "unset",
+              }}
               type="submit"
               onClick={() => i18n.changeLanguage(lng)}
             >
