@@ -64,6 +64,7 @@ const Header = () => {
               style={{
                 background: "transparent",
                 boxShadow: "unset",
+                marginRight: "10px",
               }}
               type="submit"
               onClick={() => i18n.changeLanguage(lng)}

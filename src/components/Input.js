@@ -5,6 +5,7 @@ const InputWrapper = styled.div`
   .error {
     color: black;
     margin-bottom: 10px;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
   }
   .error::last-child {
     margin-bottom: 0px;

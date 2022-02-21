@@ -12,8 +12,8 @@ const Global = createGlobalStyle`
   box-sizing: border-box;
 }
 html {
-  background: url(http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg) no-repeat center center fixed;  background-size: cover;
-  overflow: hidden;
+  background: url(http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg) no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Roboto', sans-serif;
 }
 `;
