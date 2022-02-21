@@ -8,29 +8,24 @@ import { MyContext, MyContextProvider } from "../DataContext";
 import styled from "styled-components";
 import { validationSchema } from "../schemaForRegistration";
 
-import { Link } from "react-router-dom";
-
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const RegistrationWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
   h1 {
+    color: SlateGray;
     margin-top: 15px;
     margin-bottom: 15px;
-  }
-
-  input {
-    margin-bottom: 10px;
   }
 `;
 
 const Registration = () => {
   const { values, setValue, errors, buttonHandler } = useContext(MyContext);
   const handleChange = (e) => setValue(e.target.name, e.target.value);
-
+  const navigate = useNavigate();
   const { t } = useTranslation("common");
   return (
     <>
@@ -78,10 +73,12 @@ const Registration = () => {
             error={!!errors.password2}
           />
         </Form>
-        <Button text={t("buttons.registration")} onClick={buttonHandler} />
-        <Link to="/login">
-          <Button text={t("buttons.goToLogin")} />
-        </Link>
+        <Button green onClick={buttonHandler}>
+          {t("buttons.registration")}
+        </Button>
+        <Button onClick={() => navigate("/login")}>
+          {t("buttons.goToLogin")}
+        </Button>
       </RegistrationWrapper>
     </>
   );

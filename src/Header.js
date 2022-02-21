@@ -13,15 +13,19 @@ const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: orangered;
+  background: SlateGray;
   color: white;
   padding: 10px;
-
+  // div {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: stretch;
+  // }
   a {
     color: white;
     text-decoration: none;
     outline: none;
-    margin-right: 20px;
+    margin-right: 40px;
     cursor: pointer;
   }
 
@@ -42,16 +46,18 @@ const Header = () => {
   return (
     <>
       <HeaderWrapper>
-        <h1>{t("name")}</h1>
+        <div>
+          <h1>{t("name")}</h1>
+        </div>
         <div>
           {Object.keys(lngs).map((lng) => (
             <Button
               key={lng}
-              style={{
-                border: "none",
-                background: "transparent",
-                cursor: "pointer",
-              }}
+              // style={{
+              //   background: "transparent",
+              //   boxShadow: "unset",
+              //   marginBottom: "10px",
+              // }}
               type="submit"
               onClick={() => i18n.changeLanguage(lng)}
             >
@@ -59,11 +65,13 @@ const Header = () => {
             </Button>
           ))}
         </div>
-        <nav>
-          <Link to="/">{t("links.home")}</Link>
-          <Link to="/login">{t("links.login")}</Link>
-          <Link to="/registration">{t("links.registration")}</Link>
-        </nav>
+        <div>
+          <nav>
+            <Link to="/">{t("links.home")}</Link>
+            <Link to="/login">{t("links.login")}</Link>
+            <Link to="/registration">{t("links.registration")}</Link>
+          </nav>
+        </div>
       </HeaderWrapper>
     </>
   );

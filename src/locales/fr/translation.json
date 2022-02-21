@@ -62,5 +62,7 @@
         "errorMatch": "Les mots de passe doivent être les mêmes"
       }
     }
-  }
+  },
+  "sucsecc": "Succès",
+  "failure": "Échec"
 }

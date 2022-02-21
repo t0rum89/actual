@@ -5,10 +5,16 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 
 const HomeWrapper = styled.div`
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   h1 {
+    color: SlateGray;
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+  p {
+    color: SlateGray;
   }
 `;
 

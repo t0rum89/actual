@@ -66,5 +66,7 @@
         "errorMatch": "Passwords should be the same"
       }
     }
-  }
+  },
+  "success": "Success",
+  "failure": "Failure"
 }
